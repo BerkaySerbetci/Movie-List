@@ -1,0 +1,26 @@
+.btn-1{
+    top: 0;
+    left: 0;
+}
+.ctn{
+    display: flex;
+    justify-content: center;
+}
+
+.movie-card{
+    margin-top: 50px;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    gap: 10px;
+}
+
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

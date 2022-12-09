@@ -1,0 +1,16 @@
+.bg1{
+    background-color: #F2D7D9;
+}
+
+.nav1{
+    display: flex;
+    justify-content: center;
+}
+#search-button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+#main{
+    text-decoration: none;
+    color: black;
+}

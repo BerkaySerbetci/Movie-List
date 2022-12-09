@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import WebSite from "./Proje site/website";
+import {Routes,Route,BrowserRouter} from "react-router-dom";
+import MostWatched from "./Proje site/header_sidebar/most_watched";
+import TvShow from "./Proje site/header_sidebar/tvShow";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="Website" element={<WebSite></WebSite>}/>
+        <Route path="MostWatched" element={<MostWatched></MostWatched>} />
+        <Route path="TvShow" element={<TvShow></TvShow>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
